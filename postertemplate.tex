@@ -1,0 +1,65 @@
+\documentclass[final]{beamer}
+\usetheme{IST}
+\usepackage[orientation=portrait,size=a2,scale=1.4,debug]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[utf8]{inputenc}
+
+\ifx\directlua\undefined
+  \usepackage[english]{babel}
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage{english}
+  \usepackage{fontspec}
+\fi
+
+\usepackage{listings}
+\lstloadlanguages{Ruby}
+\lstset{%
+basicstyle=\ttfamily\color{black},
+commentstyle = \ttfamily\color{red},
+keywordstyle=\ttfamily\color{blue},
+stringstyle=\color{orange}}
+
+\usepackage[hashEnumerators,definitionLists,footnotes,smartEllipses,fencedCode,]{markdown}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\title{lazar: a modular predictive toxicology framework}
+\author{C. Helma, M. Rautenberg, D. Gebele}
+\institute{\emph{in silico} toxicology gmbh, Basel, Switzerland}
+\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch}}
+
+\begin{document}
+    
+\begin{frame}{}
+
+\begin{textblock}{40.0}(1,6)
+% \begin{block}{}
+\input{./markdown_blocks/company}
+% \end{block}
+\end{textblock}
+
+ \begin{textblock}{19.5}(1,7.5)
+\begin{block}{Abstract}
+\input{./markdown_blocks/abstract}
+\end{block}
+
+\begin{block}{Screenshot}
+\input{./markdown_blocks/screenshot}
+\end{block}
+\end{textblock}
+
+\begin{textblock}{19.3}(21.8,7.5)
+\begin{block}{Maths example}
+\input{./markdown_blocks/maths}
+\end{block}
+
+\end{textblock}
+
+\end{frame}
+
+\end{document}
