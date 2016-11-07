@@ -1,0 +1,9 @@
+*~
+*.*~
+*.aux
+markdown_blocks/*.tex
+*.out
+*.nav
+*.toc
+*.snm
+*.log
