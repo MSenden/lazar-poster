@@ -1,6 +1,6 @@
 # lazar-poster
 
-lazar-poster is a poster template that uses pandoc, pdflatex and beamer-poster to create scientific posters out of a \*.tex template and some markdown files. Markdown-files will be compiled to latex files by the makefile, before they are inserted into the beamerposter template. Markdown is much easier to edit for the textblocks and the *LaTeX* template provides a good posibility for positioning blocks and format posters.  
+lazar-poster is a poster template that uses pandoc, pdflatex and beamer-poster to create scientific posters out of a \*.tex template and some markdown files. Markdown-files will be compiled to latex files by the makefile, before they are inserted into the beamerposter template. Markdown is much easier to edit for the textblocks and the *LaTeX* template provides a good possibility for positioning blocks and format posters.
 
 ## Usage
 
