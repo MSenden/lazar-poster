@@ -1,63 +1,26 @@
 \ProvidesPackage{beamerthemeIST} % this style was created by Rob J Hyndman and is an adapation of i6dv by David Vilar
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\selectcolormodel{cmyk}
-\mode<presentation>
+\usecolortheme{IST} % use colortheme in beamercolorthemeIST.sty
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{pgf}
-\usepackage{color}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-
-% custom colors
-\definecolor{i6blue}{cmyk}{1,0.305,0,0.06}
-\definecolor{i6bluedark}{rgb}{0.0156,0.2578,0.5625} 
-\definecolor{i6colorscheme1}{HTML}{FF6518}  % e.g. for block title
-\definecolor{i6colorblockbg}{HTML}{0033cc}
-\definecolor{i6colorblockfg}{HTML}{FCE94F}
-\definecolor{i6colorscheme2}{HTML}{000000}  % e.g. title in headline
-\definecolor{i6colorscheme3}{HTML}{FFFFFF}  % e.g. for poster background
-\definecolor{i6colorscheme4}{HTML}{000000} 
-\definecolor{i6colorschemeHeadline}{HTML}{FFFFFF}  % for headline bg
-\definecolor{i6colorschemeFootline}{HTML}{100D09}  % for headline bg
-
-% headline colors and fonts
-\setbeamercolor{headline}{fg=white,bg=i6colorschemeHeadline}
-\setbeamercolor{title in headline}{fg=black}
-\setbeamercolor{author in headline}{fg=black}
-\setbeamercolor{institute in headline}{fg=black}
-\setbeamercolor{logo in headline}{fg=black}
-\setbeamercolor{separation line}{bg=i6colorscheme1}
-
-
-% footline colors and fonts
-\setbeamercolor{footline}{fg=black,bg=i6colorschemeHeadline}
-\setbeamerfont{footline}{size=\normalsize}
-
-% body colors and fonts
-\setbeamercolor*{normal text}{fg=black,bg=i6colorscheme3}
-
-% block environment
-\setbeamercolor*{block body}{bg=white,fg=black}
-\setbeamercolor*{block title}{fg=i6colorblockfg,bg=i6colorblockbg}
-\setbeamerfont{block title}{size=\large,series=\bf}
-
-% example environment
-\setbeamercolor*{example title}{fg=white,bg=i6colorscheme1}
-\setbeamerfont{example title}{size=\large,series=\bf}
-
-\setbeamercolor{alerted text}{fg=i6colorscheme1}
+\ifx\directlua\undefined
+  \usepackage[english]{babel}
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage{english}
+  \usepackage{fontspec}
+\fi
 
 \setbeamertemplate{itemize items}[triangle]
-\setbeamertemplate{navigation symbols}{}  % no navigation on a poster
+\setbeamertemplate{navigation symbols}{}  % set this to remove navigation symbols on a poster
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}{
-  \vskip6ex
-  \begin{beamercolorbox}[colsep=.75ex]{block title}%
+  \vskip3ex
+  \begin{beamercolorbox}[sep=0ex,ht=3.4ex,dp=-0.2ex,colsep=0.9ex]{block title}%
     \usebeamerfont{block title}\textbf{\insertblocktitle}
   \end{beamercolorbox}%
   %{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
@@ -84,7 +47,7 @@
       \begin{column}{.15\paperwidth}
         \begin{center}
           \vskip3ex
-          % \includegraphics[width=0.65\linewidth]{ist-logo.png}
+          % \includegraphics[width=0.65\linewidth]{./images/.png} % add a logo here
         \end{center}
       \end{column}
       \begin{column}{.68\paperwidth}
@@ -101,7 +64,7 @@
       \begin{column}{.15\paperwidth}
         \begin{center}
           \vskip8ex
-          \includegraphics[width=0.9\linewidth]{./images/ist-logo.png}\hspace{6em}
+          \includegraphics[width=0.9\linewidth]{./images/ist-logo.eps}\hspace{6em}
         \end{center}
       \end{column}
       \begin{column}{.03\paperwidth}
@@ -120,10 +83,23 @@
   \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
     \rule{0pt}{2pt}
   \end{beamercolorbox}
-  
-  \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
-    \hfill \raisebox{-0.4cm}{\insertfooter}
-    \vskip1ex
+  \begin{beamercolorbox}[ht=2ex,leftskip=1cm,rightskip=1cm]{footline}%
+    \begin{columns}[t]
+      \begin{column}{.01\paperwidth}
+      \end{column}
+      \begin{column}{.83\paperwidth}
+          \vskip1ex
+          {\insertfooter}
+      \end{column}
+      \begin{column}{.15\paperwidth}
+        \begin{center}
+          \vskip1ex
+          \includegraphics[width=0.9\linewidth]{./images/ist-logo.eps}\hspace{6em}
+        \end{center}
+      \end{column}
+      \begin{column}{.01\paperwidth}
+      \end{column}
+    \end{columns}
   \end{beamercolorbox}
 
   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}

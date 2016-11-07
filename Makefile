@@ -2,11 +2,15 @@ PDFLATEX = pdflatex -shell-escape
 MD=$(wildcard ./markdown_blocks/*.md)
 
 
-# Poster
+# Poster 1
 lazar-poster.pdf:
 	./md2tex.sh
 	$(PDFLATEX) postertemplate.tex
 
+# Poster 2
+lazar-poster2.pdf:
+	./md2tex.sh
+	$(PDFLATEX) postertemplate_2.tex
 
 
 

@@ -1,1 +1,1 @@
-![Endpoints](./images/onto-viewer-toxicity.png){width=600px }
+![Endpoints](./images/onto-viewer-toxicity.png){width=1200px }
