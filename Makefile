@@ -1,4 +1,4 @@
-PDFLATEX = pdflatex -shell-escape
+PDFLATEX = pdflatex -shell-escape 
 BIBTEX = bibtex
 MD=$(wildcard ./markdown_blocks/*.md)
 

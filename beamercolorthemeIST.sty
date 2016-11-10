@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\selectcolormodel{cmyk}
+\selectcolormodel{rgb}
 \mode<presentation>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,19 +9,22 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-
 % custom colors
 \definecolor{i6blue}{cmyk}{1,0.305,0,0.06}
 \definecolor{i6bluedark}{rgb}{0.0156,0.2578,0.5625} 
-\definecolor{i6colorscheme1}{HTML}{FF6518}  % e.g. for block title
-\definecolor{i6colorblockbg}{HTML}{0033cc}
-\definecolor{i6colorblockfg}{HTML}{FCE94F}
+\definecolor{darkgrey}{HTML}{333333}
+\definecolor{darkred}{HTML}{330000}
+\definecolor{alertTitleBG}{HTML}{8A2128}
+\definecolor{darkblue}{HTML}{2C5B80}
+\definecolor{i6colorscheme1}{HTML}{2E5E84} % head and footlines
+\definecolor{i6colorblockbg}{HTML}{2E5E84} % e.g. for block title bg
+\definecolor{i6colorblockfg}{HTML}{FFFFFF}
 \definecolor{i6colorscheme2}{HTML}{000000}  % e.g. title in headline
 \definecolor{i6colorscheme3}{HTML}{FFFFFF}  % e.g. for poster background
 \definecolor{i6colorscheme4}{HTML}{000000}
 \definecolor{ISTcolorschemeblockBG}{HTML}{FFFFFF}
-\definecolor{i6colorschemeHeadline}{HTML}{FFFFFF}  % for headline bg
-\definecolor{i6colorschemeFootline}{HTML}{100D09}  % for headline bg
+\definecolor{i6colorschemeHeadline}{HTML}{DBEBF7}  % for header bg
+\definecolor{i6colorschemeFootline}{HTML}{FFFFFF}  % for footer bg
 
 % headline colors and fonts
 \setbeamercolor{headline}{fg=white,bg=i6colorschemeHeadline}
@@ -31,9 +34,27 @@
 \setbeamercolor{logo in headline}{fg=black}
 \setbeamercolor{separation line}{bg=i6colorscheme1}
 
+% table and figure captions
+\DeclareCaptionFont{caplabel}{\color[HTML]{2C5B80}}
+\DeclareCaptionFont{captext}{\color[HTML]{000000}}
+\captionsetup{labelfont=caplabel,textfont=captext}
+
+% codeblock
+\lstloadlanguages{Ruby}
+\lstset{%
+  basicstyle=\ttfamily\color{black},
+  commentstyle = \ttfamily\color{darkgrey},
+  keywordstyle=\ttfamily\color{blue},
+  stringstyle=\color{orange}}
+
+% list bullets, numbers and items
+\setbeamercolor{itemize item}{fg=darkblue,bg=white}
+\setbeamercolor{item projected}{bg=darkblue}
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{local structure}{fg=darkblue}
 
 % footline colors and fonts
-\setbeamercolor{footline}{fg=black,bg=i6colorschemeHeadline}
+\setbeamercolor{footline}{fg=black,bg=i6colorschemeFootline}
 \setbeamerfont{footline}{size=\normalsize}
 
 % body colors and fonts
@@ -48,4 +69,6 @@
 \setbeamercolor*{example title}{fg=white,bg=i6colorscheme1}
 \setbeamerfont{example title}{size=\large,series=\bf}
 
-\setbeamercolor{alerted text}{fg=i6colorscheme1}
+% alert environment
+\setbeamercolor*{block title alerted}{fg=white,bg=alertTitleBG}
+\setbeamercolor*{block body alerted}{bg=white,fg=black}

@@ -13,37 +13,62 @@
 \footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch}}
 
 \begin{document}
-    
-\begin{frame}{}
 
-\begin{textblock}{80}(1,10)
-% \begin{block}{}
-\input{./markdown_blocks/company}
-% \end{block}
-\end{textblock}
+  \begin{frame}{}
 
- \begin{textblock}{40.5}(1,14)
-\begin{block}{Abstract}
-\input{./markdown_blocks/abstract}
-\end{block}
+    \begin{textblock}{80}(1,10)
+    % \begin{block}{}
+        \input{./markdown_blocks/company}
+    % \end{block}
+    \end{textblock}
 
-\begin{block}{Screenshot}
-\input{./markdown_blocks/screenshot}
-\end{block}
-\end{textblock}
+    \begin{textblock}{40.5}(1,14)
+      \begin{block}{Abstract}
+        \input{./markdown_blocks/abstract}
+      \end{block}
 
-\begin{textblock}{40.5}(42.6,14)
+      \begin{block}{Screenshot}
+        \input{./markdown_blocks/screenshot}
+      \end{block}
 
-\begin{block}{Maths example}
-\input{./markdown_blocks/maths}
-\end{block}
+      \begin{block}{Markdown tables}
+        \input{./markdown_blocks/table}
+      \end{block}
 
-\begin{block}{References}
-  \small\bibliography{references}
-\end{block}
+    \end{textblock}
 
-\end{textblock}
+    \begin{textblock}{40.5}(42.6,14)
 
-\end{frame}
+      \begin{block}{Maths example}
+        \input{./markdown_blocks/maths}
+      \end{block}
+
+      \begin{block}{Lists}
+        \input{./markdown_blocks/lists}
+      \end{block}
+
+      \begin{block}{Code}
+        \input{./markdown_blocks/code}
+      \end{block}
+
+      \begin{block}{References}
+        \small\bibliography{references}
+      \end{block}
+
+      \begin{alertblock}{Highlighted Box}
+        \input{./markdown_blocks/exampletext}
+      \end{alertblock}
+
+    \end{textblock}
+
+    \begin{textblock}{80}(1,88)
+
+      \begin{exampleblock}{}
+        \input{./markdown_blocks/exampletext}
+      \end{exampleblock}
+
+    \end{textblock}
+
+  \end{frame}
 
 \end{document}

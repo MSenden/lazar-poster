@@ -1,7 +1,5 @@
 \ProvidesPackage{beamerthemeIST} % this style was created by Rob J Hyndman and is an adapation of i6dv by David Vilar
 
-\usecolortheme{IST} % use colortheme in beamercolorthemeIST.sty
-
 \ifx\directlua\undefined
   \usepackage[english]{babel}
   \usepackage[utf8]{inputenc}
@@ -13,18 +11,27 @@
   \usepackage{fontspec}
 \fi
 
-\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{itemize items}[triangle] % list bullets (triangle, circle, square, ball)
 \setbeamertemplate{navigation symbols}{}  % set this to remove navigation symbols on a poster
 
 \usepackage[square, numbers, comma, sort&compress]{natbib}  
 \bibliographystyle{ieeetr}  % Use "unsrtnat" BibTeX style ( abbrv, acm, ieeetr, plain)
 
-\setbeamertemplate{bibliography item}[text]
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{caption}
+\setbeamertemplate{caption}[numbered] % set numbering of tables and figures
 
+\captionsetup[table]{belowskip=12pt,aboveskip=4pt}
+
+\usecolortheme{IST} % use colortheme in beamercolorthemeIST.sty
+
+\setbeamertemplate{bibliography item}[text]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}{
   \vskip3ex
-  \begin{beamercolorbox}[sep=0ex,ht=3.4ex,dp=-0.2ex,colsep=0.9ex]{block title}%
+  \begin{beamercolorbox}[rounded=true,shadow=true,sep=0ex,ht=3.4ex,dp=-0.2ex,colsep=0.9ex]{block title}%
     \usebeamerfont{block title}\textbf{\insertblocktitle}
   \end{beamercolorbox}%
   %{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
@@ -33,6 +40,21 @@
     \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
   }
   \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+% setup alertblock
+\setbeamertemplate{block alerted begin}{
+  \vskip3ex
+  \begin{beamercolorbox}[rounded=true,shadow=true,sep=0ex,ht=3.4ex,dp=-0.2ex,colsep=0.9ex]{block title alerted}%
+    \usebeamerfont*{block title alerted}\textbf{\insertblocktitle}
+  \end{beamercolorbox}%
+  %{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body alerted}%
+  \begin{beamercolorbox}[colsep*=.75ex,sep=.75ex,vmode]{block body alerted}%
+    \ifbeamercolorempty[bg]{block body alerted}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block alerted end}{
   \end{beamercolorbox}
 }
 
@@ -50,7 +72,7 @@
       \end{column}
       \begin{column}{.15\paperwidth}
         \begin{center}
-          \vskip8ex
+          \vskip9ex
           \includegraphics[width=0.9\linewidth]{./images/eNM-logo.eps} % add a logo here
         \end{center}
       \end{column}
@@ -85,29 +107,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{footline}{
   \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
-    \rule{0pt}{2pt}
+    \rule{0pt}{3pt}
   \end{beamercolorbox}
-  \begin{beamercolorbox}[ht=2ex,leftskip=1cm,rightskip=1cm]{footline}%
+  \begin{beamercolorbox}[ht=0ex,leftskip=1cm,rightskip=1cm]{footline}%
     \begin{columns}[t]
       \begin{column}{.01\paperwidth}
       \end{column}
-      \begin{column}{.83\paperwidth}
-          \vskip1ex
+      \begin{column}{.68\paperwidth}
+          \vskip2.2ex
           {\insertfooter}
       \end{column}
-      \begin{column}{.15\paperwidth}
+      \begin{column}{.30\paperwidth}
         \begin{center}
-          \vskip1ex
-          \includegraphics[width=0.9\linewidth]{./images/ist-logo.eps}\hspace{6em}
-        \end{center}
+          \hfill
+          \includegraphics[width=0.3\linewidth]{./images/eNM-logo.eps}\hspace*{1ex}\vspace*{1ex}  
+          \includegraphics[width=0.6\linewidth]{./images/logo-ce-horizontal-en-quadri.eps}
+          \vskip2ex   
+        \end{center}       
       \end{column}
       \begin{column}{.01\paperwidth}
       \end{column}
     \end{columns}
   \end{beamercolorbox}
-
   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
-    \rule{0pt}{2pt}
+    \rule{0pt}{3pt}
   \end{beamercolorbox}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

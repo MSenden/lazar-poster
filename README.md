@@ -15,8 +15,8 @@ Edit title, author, institute/company and footer
 ### Textblocks
 Add a textblock with markdown-content (link the file company in directory markdown_blocks) for the company description. 
 ```
-\begin{textblock}{40.0}(1,6)   % textblock, width 40, position x=1 y=6
-\input{./markdown_blocks/company} % insert textblock company.tex
+\begin{textblock}{40.0}(1,6)   % textblock, width 40, position x,y
+  \input{./markdown_blocks/company} % insert textblock company.tex
 \end{textblock}
 ```
 
@@ -27,9 +27,23 @@ e.G.: company.md
 ***my company***, Sometown, Everywhere – Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo elit eget tellus posuere, eget blandit metus pretium. Mauris eu volutpat nisl. Praesent iaculis eros sit amet cursus fringilla. Morbi rhoncus bibendum odio, ut tincidunt sapien. Nam pellentesque nunc tellus, eu volutpat risus vehicula nec. Integer id volutpat mi. 
 ```
 
+### Citations
+add ```\cite{ArticleName}``` in the markdown document. Articles are listed in the file references.bib. References will be added automatically during compilation.
+
 
 ### Add images
 add images in the markdown files with standard markdown syntax 
 ```
 ![Endpoints](./images/my_image.png){width=600px }
+```
+### Add tables
+see ```man pandoc``` for all table formats. This example is made with the *pipe_tables* extension.
+```
+| Descriptor     | Val1 | Val2    | Val3   |
+|----------------|-----:|---------|:------:|
+| Physchem A     |  12  |    12   |    12  |
+| Physchem B     |  123 |   123   |   123  |
+| Physchem C     |    1 |     1   |     1  |
+
+: Here's the caption of the table.
 ```
