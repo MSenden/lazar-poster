@@ -17,17 +17,17 @@ exampleposter:
 nmsa-ist-services:
 	./md2tex.sh nmsa-ist-services.tex
 	$(PDFLATEX) nmsa-ist-services.tex
-	$(BIBTEX) nmsa-ist-services
-	$(PDFLATEX) nmsa-ist-services.tex
-	$(PDFLATEX) nmsa-ist-services.tex
+	# $(BIBTEX) nmsa-ist-services
+	# $(PDFLATEX) nmsa-ist-services.tex
+	# $(PDFLATEX) nmsa-ist-services.tex
 
 # Poster enm-ontoviewer
 nmsa-ist-ontoviewer:
 	./md2tex.sh nmsa-ist-ontoviewer.tex
 	$(PDFLATEX) nmsa-ist-ontoviewer.tex
-	$(BIBTEX) nmsa-ist-ontoviewer
-	$(PDFLATEX) nmsa-ist-ontoviewer.tex
-	$(PDFLATEX) nmsa-ist-ontoviewer.tex
+	# $(BIBTEX) nmsa-ist-ontoviewer
+	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
+	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
 	
 
 # Poster 2
