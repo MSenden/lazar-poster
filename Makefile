@@ -13,7 +13,7 @@ exampleposter:
 	$(PDFLATEX) postertemplate.tex
 	$(PDFLATEX) postertemplate.tex
 
-# Poster 1 
+# Poster IST services
 nmsa-ist-services:
 	./md2tex.sh nmsa-ist-services.tex
 	$(PDFLATEX) nmsa-ist-services.tex
@@ -21,7 +21,14 @@ nmsa-ist-services:
 	$(PDFLATEX) nmsa-ist-services.tex
 	$(PDFLATEX) nmsa-ist-services.tex
 
-
+# Poster enm-ontoviewer
+nmsa-ist-ontoviewer:
+	./md2tex.sh nmsa-ist-ontoviewer.tex
+	$(PDFLATEX) nmsa-ist-ontoviewer.tex
+	$(BIBTEX) postertemplate
+	$(PDFLATEX) nmsa-ist-ontoviewer.tex
+	$(PDFLATEX) nmsa-ist-ontoviewer.tex
+	
 
 # Poster 2
 exampleposter2:
