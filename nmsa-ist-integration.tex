@@ -1,0 +1,70 @@
+\documentclass[final]{beamer}
+\usetheme{IST}
+\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}  % poster size
+\usepackage[absolute,overlay]{textpos}
+\usepackage[utf8]{inputenc}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\title{Integration of the in silico toxicology services in the eNanoMapper infrastructure }
+\author{C. Helma, D. Gebele, M. Rautenberg}
+\institute{\emph{in silico} toxicology gmbh, Basel, Switzerland}
+\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch}}
+
+\begin{document}
+
+  \begin{frame}{}
+
+    \begin{textblock}{80}(1,12)
+    % \begin{block}{}
+        \input{./markdown_blocks/company}
+    % \end{block}
+    \end{textblock}
+
+    \begin{textblock}{40.5}(1,16)
+      \begin{block}{Abstract}
+        \input{./markdown_blocks/integration_summary}
+      \end{block}
+
+      \begin{block}{Screenshot}
+        \input{./markdown_blocks/screenshot}
+      \end{block}
+
+      \begin{block}{Markdown tables}
+        \input{./markdown_blocks/table}
+      \end{block}
+
+    \end{textblock}
+
+    \begin{textblock}{40.5}(42.6,16)
+
+      \begin{block}{Maths example}
+        \input{./markdown_blocks/maths}
+      \end{block}
+
+      \begin{alertblock}{Highlighted Box}
+        \input{./markdown_blocks/exampletext}
+      \end{alertblock}
+
+      \begin{block}{Code}
+        \input{./markdown_blocks/code}
+      \end{block}
+
+      \begin{exampleblock}{Links}
+        \input{./markdown_blocks/services_links}
+      \end{exampleblock}
+
+      \begin{block}{References}
+        \small\bibliography{references}
+      \end{block}
+
+    \end{textblock}
+
+    \begin{textblock}{82.1}(1,88)
+      \input{./markdown_blocks/exampletext}
+    \end{textblock}
+
+  \end{frame}
+
+\end{document}
