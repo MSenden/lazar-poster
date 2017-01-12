@@ -41,9 +41,9 @@ nmsa-ist-integration:
 nmsa-ist-rest:
 	./md2tex.sh nmsa-ist-rest.tex
 	$(PDFLATEX) nmsa-ist-rest.tex
-	# $(BIBTEX) nmsa-ist-rest
-	# $(PDFLATEX) nmsa-ist-rest.tex
-	# $(PDFLATEX) nmsa-ist-rest.tex
+	$(BIBTEX) nmsa-ist-rest
+	$(PDFLATEX) nmsa-ist-rest.tex
+	$(PDFLATEX) nmsa-ist-rest.tex
 	
 # Poster 2
 exampleposter2:
