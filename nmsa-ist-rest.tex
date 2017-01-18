@@ -1,6 +1,6 @@
 \documentclass[final]{beamer}
 \usetheme{IST}
-\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}  % poster size
+\usepackage[orientation=portrait,size=a0,scale=1.3,debug]{beamerposter}  % poster size
 \usepackage[absolute,overlay]{textpos}
 \usepackage[utf8]{inputenc}
 
@@ -24,15 +24,17 @@
 
     \begin{textblock}{40.5}(1,14)
       \begin{block}{Abstract}
+        \justifying
         \input{./markdown_blocks/rest_summary}
+      \end{block}
+
+      \begin{block}{lazar}
+        \justifying
+        \input{./markdown_blocks/rest_lazar_description}
       \end{block}
 
       \begin{block}{Swagger API GUI}
         \input{./markdown_blocks/rest_screenshot}
-      \end{block}
-
-      \begin{block}{Markdown tables}
-        \input{./markdown_blocks/table}
       \end{block}
 
     \end{textblock}
@@ -40,6 +42,7 @@
     \begin{textblock}{40.5}(42.6,14)
 
       \begin{block}{Authorization \& Authentication}
+        \justifying        
         \input{./markdown_blocks/rest_aa}
       \end{block}
 
@@ -47,8 +50,8 @@
         \input{./markdown_blocks/exampletext}
       \end{alertblock}
 
-      \begin{block}{Code}
-        \input{./markdown_blocks/code}
+      \begin{block}{Practical Linux cURL Command Examples}
+        \input{./markdown_blocks/rest_examples}
       \end{block}
 
       \begin{exampleblock}{Links}
@@ -56,12 +59,13 @@
       \end{exampleblock}
 
       \begin{block}{References}
+        \justifying
         \small\bibliography{references}
       \end{block}
 
     \end{textblock}
 
-    \begin{textblock}{82.1}(1,88)
+    \begin{textblock}{82.1}(1,98)
       \input{./markdown_blocks/exampletext}
     \end{textblock}
 

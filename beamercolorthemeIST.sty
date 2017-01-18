@@ -40,13 +40,20 @@
 \DeclareCaptionFont{captext}{\color[HTML]{000000}}
 \captionsetup{labelfont=caplabel,textfont=captext}
 
+
+\definecolor{lightgrey}{rgb}{0.96,0.96,0.96} % defining color for listing
+\definecolor{darkgreen}{rgb}{0,0.6,0} % defining color for listing
+\definecolor{red}{rgb}{0.6,0,0} % defining color for listing
+
 % codeblock
 \lstloadlanguages{Ruby}
+\lstloadlanguages{Bash}
 \lstset{%
   basicstyle=\ttfamily\color{black},
   commentstyle = \ttfamily\color{darkgrey},
   keywordstyle=\ttfamily\color{blue},
-  stringstyle=\color{orange}}
+  stringstyle=\color{red},
+  backgroundcolor=\color{lightgrey}}
 
 % list bullets, numbers and items
 \setbeamercolor{itemize item}{fg=darkblue,bg=white}
