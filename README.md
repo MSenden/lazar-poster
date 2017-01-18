@@ -20,6 +20,15 @@ Add a textblock with markdown-content (link the file company in directory markdo
 \end{textblock}
 ```
 
+Add a textblock with justified text
+```latex
+\begin{block}{My Textblocktitle}
+  \justifying
+  \input{./markdown_blocks/mytextblock}
+\end{block}
+```
+
+
 the directory *markdown_blocks* contains the markdown documents. 
 e.G.: company.md
 
