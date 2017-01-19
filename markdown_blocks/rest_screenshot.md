@@ -1,1 +1,0 @@
-![Swagger UI](./images/rest_swagger.png "This a short caption (alt text)"){width=1540px}
