@@ -20,6 +20,7 @@ nmsa-ist-services:
 	# $(BIBTEX) nmsa-ist-services
 	# $(PDFLATEX) nmsa-ist-services.tex
 	# $(PDFLATEX) nmsa-ist-services.tex
+	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-services.tex && pdflatex nmsa-ist-services.tex"
 
 # Poster enm-ontoviewer
 nmsa-ist-ontoviewer:
@@ -28,7 +29,8 @@ nmsa-ist-ontoviewer:
 	# $(BIBTEX) nmsa-ist-ontoviewer
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
-	
+	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-ontoviewer.tex && pdflatex nmsa-ist-ontoviewer.tex"
+
 # Poster enm-integration
 nmsa-ist-integration:
 	./md2tex.sh nmsa-ist-integration.tex
@@ -36,6 +38,7 @@ nmsa-ist-integration:
 	# $(BIBTEX) nmsa-ist-integration
 	# $(PDFLATEX) nmsa-ist-integration.tex
 	# $(PDFLATEX) nmsa-ist-integration.tex
+	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-integration.tex && pdflatex nmsa-ist-integration.tex"
 	
 # Poster enm-rest
 nmsa-ist-rest:
@@ -44,6 +47,7 @@ nmsa-ist-rest:
 	$(BIBTEX) nmsa-ist-rest
 	$(PDFLATEX) nmsa-ist-rest.tex
 	$(PDFLATEX) nmsa-ist-rest.tex
+	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-rest.tex && pdflatex nmsa-ist-rest.tex"
 	
 # Poster 2
 exampleposter2:
