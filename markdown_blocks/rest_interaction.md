@@ -1,3 +1,0 @@
-The lazar-rest webservice text ...
-
-![nano-lazar Swagger UI](./images/rest_interaction.png "nano-lazar Swagger UI") 
