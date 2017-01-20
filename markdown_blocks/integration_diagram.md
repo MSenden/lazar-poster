@@ -1,1 +1,1 @@
-![nano-lazar integration](./images/integration.pdf "nano-lazar integration"){width=3040px}
+![nano-lazar integration](./images/integration.pdf "nano-lazar integration"){width=100%}
