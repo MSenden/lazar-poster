@@ -1,4 +1,6 @@
-lazar-rest do provide QMRF reporting. The integrated QSAR-report Ruby gem library can generate initial QMRF reports in XML format with the basic 
-information of a model.
-The QSAR-report gem was developed to extend the lazar and nano-lazar toxicity prediction application with QMRF and QPRF reporting features. 
-The library gem is independent from lazar or nano-lazar and can also be used in any other ruby code.
+lazar-rest supports QMRF reporting. The integrated QSAR-report library 
+generates QMRF reports in XML format with basic model information (e.g.
+validation results according to OECD guidelines). The QMRF report
+library is independent of other IST libraries (e.g. lazar,
+nano-lazar-gui, lazar-rest) and can be used by other applications that
+need QMRF reporting.

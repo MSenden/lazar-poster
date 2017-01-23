@@ -1,1 +1,1 @@
-![nano-lazar Restful API on Swagger UI](./images/rest_swagger_2.png "nano-lazar Restful API on Swagger UI"){width=1540px}
+![Swagger UI for the nano-lazar REST API](./images/rest_swagger_2.png "Swagger UI for the nano-lazar REST API"){width=1540px}
