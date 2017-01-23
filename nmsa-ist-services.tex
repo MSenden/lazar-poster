@@ -1,6 +1,6 @@
 \documentclass[final]{beamer}
 \usetheme{IST}
-\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}  % poster size
+\usepackage[orientation=portrait,size=a0,scale=1.3,debug]{beamerposter}  % poster size
 \usepackage[absolute,overlay]{textpos}
 \usepackage[utf8]{inputenc}
 
@@ -16,44 +16,49 @@
 
   \begin{frame}{}
 
-    \begin{textblock}{80}(1,10)
-    % \begin{block}{}
-        \input{./markdown_blocks/company}
-    % \end{block}
-    \end{textblock}
-
-    \begin{textblock}{40.5}(1,14)
+    \begin{textblock}{40.5}(1,8.6)
       \begin{block}{Abstract}
         \input{./markdown_blocks/services_summary}
       \end{block}
 
-      \begin{block}{Screenshot}
-        \input{./markdown_blocks/screenshot}
+      \begin{block}{lazar}
+        \input{./markdown_blocks/services_lazar}
       \end{block}
 
-      \begin{block}{Markdown tables}
-        \input{./markdown_blocks/table}
+      \begin{block}{nano-lazar}
+        \input{./markdown_blocks/services_nano-lazar}
       \end{block}
+
+      \begin{block}{lazar-rest}
+        \input{./markdown_blocks/services_lazar-rest}
+      \end{block}
+
+      \begin{block}{eNM ontoviewer}
+        \input{./markdown_blocks/services_ontoviewer}
+      \end{block}
+
+      \begin{block}{SPARQL endpoint to eNM ontology and data}
+        \input{./markdown_blocks/services_sparql}
+      \end{block}
+
 
     \end{textblock}
 
-    \begin{textblock}{40.5}(42.6,14)
+    \begin{textblock}{40.5}(42.6,8.6)
 
-      \begin{block}{Maths example}
-        \input{./markdown_blocks/maths}
+      \begin{block}{Authorization \& Authentication}
+        \input{./markdown_blocks/services_aa}
       \end{block}
 
-      \begin{alertblock}{Highlighted Box}
-        \input{./markdown_blocks/exampletext}
-      \end{alertblock}
-
-      \begin{block}{Code}
-        \input{./markdown_blocks/code}
+      \begin{block}{QSAR-reporting}
+        \input{./markdown_blocks/services_qsar-report}
       \end{block}
 
-      \begin{exampleblock}{Links}
-        \input{./markdown_blocks/services_links}
-      \end{exampleblock}
+      \begin{block}{eNanoMapper infrastructure}
+        \input{./markdown_blocks/services_infrastructure}
+      \end{block}
+
+
 
       \begin{block}{References}
         \small\bibliography{references}

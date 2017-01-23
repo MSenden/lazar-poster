@@ -4,11 +4,11 @@ Get an URI list for all models:
 ```
 
 Retrieve an JSON representation of a model:
-```Bash
+```bash
   curl -X GET -H 'Accept: application/json' -H 'accept: application/json' 'https://enm.in-silico.ch/model/<MODELID>'
 ```
 
 Predict a nano-particle:
 ```Bash
-  curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept:text/html' -d 'identifier= \ https://enm.in-silico.ch/nanoparticle/<NANOPARTICLEID>' 'https://enm.in-silico.ch/model/<MODELID>'
+  curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept:text/html' -d 'identifier= https://enm.in-silico.ch/nanoparticle/<NANOPARTICLEID>' 'https://enm.in-silico.ch/model/<MODELID>'
 ```
