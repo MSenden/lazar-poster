@@ -6,7 +6,7 @@
 
 * eNM ontology viewer <https://query.enanomapper.net/enm-viewer>
 
-* nano-lazar REST interface <https://enm.enanomapper.org>
+* nano-lazar REST interface <https://enm.enanomapper.net>
 
 * eNM SPARQL interface <https://sparql.enanomapper.net>
 
