@@ -17,9 +17,9 @@ exampleposter:
 nmsa-ist-services:
 	./md2tex.sh nmsa-ist-services.tex
 	$(PDFLATEX) nmsa-ist-services.tex
-	# $(BIBTEX) nmsa-ist-services
-	# $(PDFLATEX) nmsa-ist-services.tex
-	# $(PDFLATEX) nmsa-ist-services.tex
+	$(BIBTEX) nmsa-ist-services
+	$(PDFLATEX) nmsa-ist-services.tex
+	$(PDFLATEX) nmsa-ist-services.tex
 	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-services.tex && pdflatex nmsa-ist-services.tex"
 
 # Poster enm-ontoviewer

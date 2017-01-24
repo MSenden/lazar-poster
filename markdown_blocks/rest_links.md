@@ -8,6 +8,9 @@
 * Nano-lazar REST API services source code repository
   <https://github.com/opentox/lazar-rest>
   
+* Nano-lazar REST API services gem library
+  <https://rubygems.org/gems/lazar-rest>
+
 * Nano-lazar REST API services Rubydocs gem library documentation
   <http://www.rubydoc.info/gems/lazar-rest>
 

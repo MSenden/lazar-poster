@@ -1,4 +1,4 @@
-* Nano-lazar for toxicity predictions - graphical user interface. 
+* Nano-lazar for toxicity predictions - graphical user interface\cite{gebele_denis_2017_250818}. 
   \
   <https://nano-lazar.in-silico.ch>
 
