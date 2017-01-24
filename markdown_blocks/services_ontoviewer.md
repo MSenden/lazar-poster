@@ -1,4 +1,4 @@
-The eNanoMapper ontology viewer application visualizes SPARQL query results from eNM ontologies ad data.
+The eNanoMapper ontology viewer application\cite{gebele_denis_2017_259384} visualizes SPARQL query results from eNM ontologies ad data.
 
 * eNanoMapper ontology viewer 
   <https://query.enanomapper.org/>
