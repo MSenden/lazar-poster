@@ -24,12 +24,12 @@ nmsa-ist-services:
 
 # Poster enm-ontoviewer
 nmsa-ist-ontoviewer:
-	./md2tex.sh nmsa-ist-ontoviewer.tex
-	$(PDFLATEX) nmsa-ist-ontoviewer.tex
+	#./md2tex.sh nmsa-ist-ontoviewer.tex
+	#$(PDFLATEX) nmsa-ist-ontoviewer.tex
 	# $(BIBTEX) nmsa-ist-ontoviewer
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
-	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-ontoviewer.tex && pdflatex nmsa-ist-ontoviewer.tex"
+	./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-ontoviewer.tex && pdflatex nmsa-ist-ontoviewer.tex"
 
 # Poster enm-integration
 nmsa-ist-integration:
