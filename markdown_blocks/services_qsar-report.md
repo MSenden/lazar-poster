@@ -1,16 +1,16 @@
-The QSAR-report Ruby gem library was developed to extend nano-lazar with QMRF and QPRF reporting features.
+QMRF and QPRF reporting features for `nano-lazar`. This library is accessible from the `nano-lazar` GUI and the `lazar-rest` webservices.
 
-* QSAR report - Ruby gem library\cite{rautenberg_micha_2016_179038} for QMRF and QPRF reporting
-  <https://rubygems.org/gems/qsar-report/>
-
-* QSAR report - Rubydoc documentation
-  <http://www.rubydoc.info/gems/qsar-report>
-
-* QSAR report - Ruby gem library source code
+* `qsar-report` source code \cite{rautenberg_micha_2016_179038}
   <https://github.com/opentox/qsar-report>
 
-* QSAR report - Ruby gem library issue tracker
+* `qsar-report` Ruby gem library
+  <https://rubygems.org/gems/qsar-report/>
+
+* `qsar-report` issue tracker
   <https://github.com/opentox/qsar-report/issues>
 
-* QSAR report - Tutorial
+* `qsar-report` tutorial
   <http://opentox.github.io/usage/2016/10/05/qmrf-and-qprf-reporting-library-gem>
+
+* `qsar-report` API documentation
+  <http://www.rubydoc.info/gems/qsar-report>
