@@ -1,23 +1,23 @@
-* Nano-lazar REST API GUI. Swagger UI based documentation for API visualization and interaction.
+* `nano-lazar` REST API GUI. Swagger UI based documentation for API visualization and interaction.
   \
   <https://enm.in-silico.ch>
 
-* Nano-lazar Swagger API definition file
+* `nano-lazar` Swagger API definition file
   <https://enm.in-silico.ch/api/api.json> 
 
-* Nano-lazar REST API services source code repository
+* `nano-lazar` REST API services source code repository
   <https://github.com/opentox/lazar-rest>
   
-* Nano-lazar REST API services gem library
+* `nano-lazar` REST API services gem library
   <https://rubygems.org/gems/lazar-rest>
 
-* Nano-lazar REST API services Rubydocs gem library documentation
+* `nano-lazar` REST API services Rubydocs gem library documentation
   <http://www.rubydoc.info/gems/lazar-rest>
 
-* Nano-lazar REST API issue tracker
+* `nano-lazar` REST API issue tracker
   <https://github.com/opentox/lazar-rest/issues>
 
-* Lazar (source code)
+* `lazar` (source code)
   <https://github.com/opentox/lazar>
 
 * Swagger framework for APIs 

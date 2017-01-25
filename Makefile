@@ -35,9 +35,9 @@ nmsa-ist-ontoviewer:
 nmsa-ist-integration:
 	./md2tex.sh nmsa-ist-integration.tex
 	$(PDFLATEX) nmsa-ist-integration.tex
-	# $(BIBTEX) nmsa-ist-integration
-	# $(PDFLATEX) nmsa-ist-integration.tex
-	# $(PDFLATEX) nmsa-ist-integration.tex
+	$(BIBTEX) nmsa-ist-integration
+	$(PDFLATEX) nmsa-ist-integration.tex
+	$(PDFLATEX) nmsa-ist-integration.tex
 	#./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-integration.tex && pdflatex nmsa-ist-integration.tex"
 	
 # Poster enm-rest

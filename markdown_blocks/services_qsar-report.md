@@ -1,6 +1,6 @@
 QMRF and QPRF reporting features for `nano-lazar`. This library is accessible from the `nano-lazar` GUI and the `lazar-rest` webservices.
 
-* `qsar-report` source code \cite{rautenberg_micha_2016_179038}
+* `qsar-report` source code\cite{rautenberg_micha_2016_179038}
   <https://github.com/opentox/qsar-report>
 
 * `qsar-report` Ruby gem library
