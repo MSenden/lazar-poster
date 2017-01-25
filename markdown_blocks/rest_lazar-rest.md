@@ -1,3 +1,3 @@
-lazar-rest is a gem library written in Ruby. It provides a REST API webservice to lazar and nano-lazar. 
-The API is documented in the Swagger RESTful API documentation specification version 2.0. 
-This specification is conform to the Open API Iniciative specification.  
+lazar-rest is a Ruby library, that provides a REST interface for nano-lazar. 
+The API is compatible with eNanoMapper specifications and documented with the Swagger API framework (version 2.0), 
+which conforms with the Open API Initiative specification. 

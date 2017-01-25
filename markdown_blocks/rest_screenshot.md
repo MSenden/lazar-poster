@@ -1,0 +1,1 @@
+![Swagger UI for the nano-lazar REST API](./images/rest_swagger_2.png "Swagger UI for the nano-lazar REST API"){width=1540px}

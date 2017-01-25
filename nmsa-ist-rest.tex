@@ -7,22 +7,16 @@
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 
-\title{In silico toxicology nano-lazar API rest services}
+\title{In silico toxicology eNanoMapper REST services}
 \author{M. Rautenberg, C. Helma, D. Gebele}
 \institute{\emph{in silico} toxicology gmbh, Basel, Switzerland}
-\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch}}
+\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch} \\ \emph{in silico toxicology gmbh} - Rastatterstrasse 41 - CH-4057 Basel, Switzerland }
 
 \begin{document}
 
   \begin{frame}{}
 
-    \begin{textblock}{80}(1,10)
-    % \begin{block}{}
-        \input{./markdown_blocks/company}
-    % \end{block}
-    \end{textblock}
-
-    \begin{textblock}{40.5}(1,14)
+    \begin{textblock}{40.5}(1,8.4)
       \begin{block}{Abstract}
         \justifying
         \input{./markdown_blocks/rest_summary}
@@ -33,34 +27,44 @@
         \input{./markdown_blocks/rest_lazar_description}
       \end{block}
 
+      \begin{block}{REST}
+        \justifying
+        \input{./markdown_blocks/rest_rest}
+      \end{block}
+
       \begin{block}{lazar-rest services}
         \justifying
         \input{./markdown_blocks/rest_lazar-rest}
       \end{block}
 
-      \begin{block}{lazar-rest Swagger UI graphical interface}
-        \vskip.6ex
-        \input{./markdown_blocks/rest_screenshot_1}
+      \begin{block}{lazar-rest Swagger interface}
+        \vskip.2ex
+        \input{./markdown_blocks/rest_swagger_ui}
+        \vskip.2ex
+        \input{./markdown_blocks/rest_screenshot}
       \end{block}
 
-
+      \begin{block}{QMRF support}
+        \justifying
+        \input{./markdown_blocks/rest_qmrf}
+      \end{block}
 
     \end{textblock}
 
-    \begin{textblock}{40.5}(42.6,14)
+    \begin{textblock}{40.5}(42.6,8.4)
 
-      \begin{block}{Interaction with other services}
-        \input{./markdown_blocks/rest_interaction}
+      \begin{block}{Integration with eNanoMapper and other services}
+        \input{./markdown_blocks/rest_integration}
       \end{block}
 
-      \begin{block}{Authorization \& Authentication}
+      \begin{block}{Authorization \& authentication}
         \justifying        
         \input{./markdown_blocks/rest_aa}
       \end{block}
 
-      \begin{block}{Practical Linux cURL Command Examples}
+      \begin{alertblock}{Practical linux cURL command examples}
         \input{./markdown_blocks/rest_examples}
-      \end{block}
+      \end{alertblock}
 
       \begin{exampleblock}{Links}
         \input{./markdown_blocks/rest_links}
