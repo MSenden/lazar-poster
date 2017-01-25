@@ -1,6 +1,6 @@
-`lazar-rest` provides an eNanoMapper compatible REST API for the `nano-lazar` read-across framework
+`lazar-rest` provides an eNanoMapper compatible REST API for the `nano-lazar` read-across framework.
 
-* `lazar-rest` Swagger UI documentation for API visualization and interaction. \cite{rautenberg_micha_2016_187328}
+* `lazar-rest` Swagger UI documentation for API visualization and interaction \cite{rautenberg_micha_2016_187328}
   <https://enm.in-silico.ch>
 
 * `lazar-rest` Swagger API definition file

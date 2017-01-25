@@ -4,7 +4,9 @@ eNanoMapper infrastructure services implemented and maintained by IST.
   <https://bugzilla.enanomapper.net/>
 
 * Mailman mailing list for partner, developers and associate-partners
-  <http://lists.enanomapper.net/>
+  <http://lists.enanomapper.net/cgi-bin/mailman/listinfo/partner>
+  <http://lists.enanomapper.net/cgi-bin/mailman/listinfo/developers>
+  <http://lists.enanomapper.net/cgi-bin/mailman/listinfo/associate-partner>
 
 * Registration form and user management
   <https://purl.enanomapper.net/register/>
@@ -16,7 +18,7 @@ eNanoMapper infrastructure services implemented and maintained by IST.
   (e.g. <https://purl.enanomapper.net/php/ENM_0000018>)
 
 * LDAP user database server and replication server
-  <ldap.opentox.org>
+  <http://ldap.opentox.org>
   
 * Blog entries with technical details about eNanoMapper implementations
   <http://opentox.github.io/archive>
