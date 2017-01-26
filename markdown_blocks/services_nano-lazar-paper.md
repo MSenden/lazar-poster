@@ -1,6 +1,7 @@
-Detailed description of `nano-lazar` methods and validation results. Results can be reproduced by external researchers with the accompanying docker image.
+Detailed description of `nano-lazar` methods and validation results \cite{helma_2017}. 
+Results can be reproduced by external researchers with the accompanying docker image.
 
-* Source code for nano-lazar publication (and oral presentations).
+* Source code for `nano-lazar` publication (and oral presentations).
   <https://github.com/enanomapper/nano-lazar-paper>
 
 * Manuscript submitted to Frontiers in Pharmacology

@@ -1,13 +1,13 @@
-* Lazar (source code)
+* `lazar` (source code)
   <https://github.com/opentox/lazar>
 
-* Nano-lazar GUI (graphical user interface)
+* `nano-lazar` GUI (graphical user interface)
   <https://github.com/eNanoMapper/nano-lazar>
 
-* Nano-lazar Restful API services
+* `nano-lazar` Restful API services
   <https://github.com/opentox/lazar-rest> 
 
-* Nano-lazar paper manuscript (source code repository)
+* `nano-lazar` paper manuscript (source code repository)
   <https://github.com/enanomapper/nano-lazar-paper>
 
 * Docker image

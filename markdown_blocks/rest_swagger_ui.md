@@ -1,1 +1,1 @@
-Swagger UI is used as an interactive documentation and visualization platform for the lazar-rest API.
+Swagger UI is used as an interactive documentation and visualization platform for the `lazar-rest` API.

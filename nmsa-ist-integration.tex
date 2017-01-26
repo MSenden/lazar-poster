@@ -1,31 +1,40 @@
 \documentclass[final]{beamer}
 \usetheme{IST}
-\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}  % poster size
+\usepackage[orientation=portrait,size=a0,scale=1.3,debug]{beamerposter}  % poster size
 \usepackage[absolute,overlay]{textpos}
 \usepackage[utf8]{inputenc}
 
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 
-\title{Integration of the in silico toxicology services in the eNanoMapper infrastructure }
+\title{Integration of in silico toxicology services in the \\ eNanoMapper infrastructure }
 \author{C. Helma, D. Gebele, M. Rautenberg}
 \institute{\emph{in silico} toxicology gmbh, Basel, Switzerland}
-\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch}}
+\footer{Contact: \texttt{support@in-silico.ch}. Information: \texttt{www.in-silico.ch} \\ \emph{in silico} toxicology gmbh - Rastatterstrasse 41 - CH-4057 Basel, Switzerland }
 
 \begin{document}
 
   \begin{frame}{}
 
-    \begin{textblock}{40.5}(1,11)
+    \begin{textblock}{40.5}(1,10)
       \begin{block}{Abstract}
         \input{./markdown_blocks/integration_summary}
       \end{block}
 
+      \begin{exampleblock}{Links}
+        \input{./markdown_blocks/integration_links}
+      \end{exampleblock}
+
+
+      \begin{block}{References}
+        \small\bibliography{references}
+      \end{block}
+
     \end{textblock}
 
-    \begin{textblock}{40.5}(42.6,11)
+    \begin{textblock}{40.5}(42.6,10)
 
-      \begin{block}{Text}
+      \begin{block}{Integration details}
         \input{./markdown_blocks/integration_text}
       \end{block}
 
@@ -33,23 +42,17 @@
 
 
 
-    \begin{textblock}{82.1}(1,28)
+    \begin{textblock}{82.1}(1,50)
       \input{./markdown_blocks/integration_diagram}
     \end{textblock}
 
-    \begin{textblock}{40.5}(1,90)
+    \begin{textblock}{40.5}(1,82)
 
-      \begin{exampleblock}{Links}
-        \input{./markdown_blocks/integration_links}
-      \end{exampleblock}
 
     \end{textblock}
 
-    \begin{textblock}{40.5}(42.6,90)
+    \begin{textblock}{40.5}(42.6,82)
 
-      \begin{block}{References}
-        \small\bibliography{references}
-      \end{block}
 
     \end{textblock}
 
