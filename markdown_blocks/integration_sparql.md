@@ -1,0 +1,2 @@
+  - Sends SPARQL queries to the RDF store
+  - Receives SPARQL query results in different formats

@@ -1,0 +1,3 @@
+  - Mirrors eNanoMapper data for read-across models
+  - Creates read-across predictions for the `nano-lazar` webinterface
+  - Responds to requests from the `lazar-rest` interface (e.g. nanoparticle predictions, model creation and validation, descriptor calculation)

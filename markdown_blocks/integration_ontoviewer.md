@@ -1,0 +1,2 @@
+  - Sends SPARQL queries to the RDF store
+  - Visualises RDF response from the RDF store

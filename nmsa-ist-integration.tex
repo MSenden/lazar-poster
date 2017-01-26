@@ -1,6 +1,6 @@
 \documentclass[final]{beamer}
 \usetheme{IST}
-\usepackage[orientation=portrait,size=a0,scale=1.3,debug]{beamerposter}  % poster size
+\usepackage[orientation=portrait,size=a0,scale=1.24,debug]{beamerposter}  % poster size
 \usepackage[absolute,overlay]{textpos}
 \usepackage[utf8]{inputenc}
 
@@ -21,38 +21,56 @@
         \input{./markdown_blocks/integration_summary}
       \end{block}
 
-      \begin{exampleblock}{Links}
-        \input{./markdown_blocks/integration_links}
-      \end{exampleblock}
+      \begin{block}{{\tt lazar} \cite{helma_2017}\cite{helma_christoph_2016_215483}}
+        \input{./markdown_blocks/integration_lazar}
+      \end{block}
 
-
-      \begin{block}{References}
-        \small\bibliography{references}
+      \begin{block}{{\tt nano-lazar} GUI \cite{gebele_denis_2017_250818}}
+        \input{./markdown_blocks/integration_nano-lazar}
       \end{block}
 
     \end{textblock}
 
     \begin{textblock}{40.5}(42.6,10)
 
-      \begin{block}{Integration details}
-        \input{./markdown_blocks/integration_text}
+      \begin{block}{{\tt nano-lazar} REST interface \cite{rautenberg_micha_2016_187328}}
+        \input{./markdown_blocks/integration_lazar-rest}
       \end{block}
+
+      \begin{block}{eNM {\tt ontology viewer} \cite{gebele_denis_2017_259384}}
+        \input{./markdown_blocks/integration_ontoviewer}
+      \end{block}
+
+      \begin{block}{RDF store}
+        \input{./markdown_blocks/integration_rdf}
+      \end{block}
+
+      \begin{block}{eNM SPARQL interface}
+        \input{./markdown_blocks/integration_sparql}
+      \end{block}
+
 
     \end{textblock}
 
 
 
-    \begin{textblock}{82.1}(1,50)
+    \begin{textblock}{82.1}(1,36)
       \input{./markdown_blocks/integration_diagram}
     \end{textblock}
 
-    \begin{textblock}{40.5}(1,82)
+    \begin{textblock}{40.5}(1,97)
 
+      \begin{exampleblock}{Links}
+        \input{./markdown_blocks/integration_links}
+      \end{exampleblock}
 
     \end{textblock}
 
-    \begin{textblock}{40.5}(42.6,82)
+    \begin{textblock}{40.5}(42.6,97)
 
+      \begin{block}{References}
+        \small\bibliography{references}
+      \end{block}
 
     \end{textblock}
 
