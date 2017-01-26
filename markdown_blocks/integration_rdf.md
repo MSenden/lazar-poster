@@ -1,0 +1,2 @@
+  - Mirrors eNanoMapper data and ontologies
+  - Responds to SPARQL queries from the ontology viewer and the SPARQL interface

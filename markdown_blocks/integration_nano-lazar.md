@@ -1,0 +1,3 @@
+  - Obtains nanoparticle toxicity predictions from the `lazar` library
+  - Uses ontologies (eNanoMapper, BioPortal, UniProt) to explain domain specific terms in the user interface
+  - Uses ontologies and eNanoMapper data as supporting information for read-across predictions
