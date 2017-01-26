@@ -29,7 +29,7 @@ nmsa-ist-ontoviewer:
 	# $(BIBTEX) nmsa-ist-ontoviewer
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
 	# $(PDFLATEX) nmsa-ist-ontoviewer.tex
-	./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-ontoviewer.tex && pdflatex nmsa-ist-ontoviewer.tex"
+	./dockercmd.sh /bin/sh -c "./md2tex.sh nmsa-ist-ontoviewer.tex && pdflatex -shell-escape nmsa-ist-ontoviewer.tex && bibtex nmsa-ist-ontoviewer && pdflatex -shell-escape nmsa-ist-ontoviewer.tex && pdflatex -shell-escape nmsa-ist-ontoviewer.tex"
 
 # Poster enm-integration
 nmsa-ist-integration:
