@@ -2,11 +2,11 @@
 
 * eNM ontologies <https://github.com/enanomapper/ontologies>
 
-* nano-lazar GUI <http://nano-lazar.in-silico.ch>
+* `nano-lazar` GUI <https://nano-lazar.in-silico.ch>
 
-* eNM ontology viewer <https://query.enanomapper.net/enm-viewer>
+* eNM `ontology viewer` <https://query.enanomapper.net/enm-viewer>
 
-* nano-lazar REST interface <https://enm.enanomapper.net>
+* `nano-lazar` REST interface <https://enm.in-silico.ch>
 
 * eNM SPARQL interface <https://sparql.enanomapper.net>
 

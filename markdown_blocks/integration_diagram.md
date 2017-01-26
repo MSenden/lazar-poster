@@ -1,1 +1,1 @@
-![nano-lazar\cite{gebele_denis_2017_250818}\cite{helma_christoph_2016_215483}\cite{rautenberg_micha_2016_187328} integration](./images/integration.pdf "nano-lazar integration"){width=100%}
+![`nano-lazar` integration](./images/integration.pdf "nano-lazar integration"){width=100%}
